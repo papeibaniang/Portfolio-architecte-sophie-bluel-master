@@ -138,11 +138,11 @@ li:hover {
 	margin-right: 10px;
 	padding: 10px 20px;
 }
-.filtre button:hover{
+.filtre button:focus{
 	color: #fff;
 	background-color: #1D6154;
 }
-.filtre button::after{
+.filtre button:hover{
 	color: #fff;
 	background-color: #1D6154;
 }
@@ -157,6 +157,12 @@ li:hover {
 .gallery img {
 	width: 100%;
 
+}
+.gallery figcaption{
+	font-weight: 400;
+	font-size: 13px;
+	color: #3D3D3D;
+	padding-top: 5px;
 }
 #contact {
 	width: 50%;
