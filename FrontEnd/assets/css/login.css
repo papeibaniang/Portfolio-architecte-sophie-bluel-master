@@ -1,0 +1,58 @@
+html {
+	height: 100%;
+	background-color: #FFFEF8;
+}
+
+h1{
+    text-align: center;
+    color: #1D6154;
+    margin-bottom: 37px;
+}
+
+
+.formulaire{
+    text-align: center;
+    margin: 0 25%;
+}
+
+label{
+    font-weight: 500;
+    font-size: 14px;
+    color: #3D3D3D;
+}
+
+input{
+    width: 100%;
+}
+
+.champs{
+    margin: 0 25%;
+    text-align: start;
+}
+
+.champsMail{
+    margin-bottom: 30px;
+}
+
+input[type="submit"]{
+    display: block;
+    border-radius: 60px;
+    padding: 10px 39px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input[type="email"], input[type="password"]{
+    color: #fff;
+    box-shadow: 0 4px 14px 0 #00000017;
+    border: none;
+    height: 51px;
+    margin-top: 2px;
+}
+
+.formulaire>a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #3D3D3D;
+}
