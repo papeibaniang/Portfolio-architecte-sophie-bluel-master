@@ -132,6 +132,19 @@ li a:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+.btnModifier{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btnModifier span{
+	margin-left: 25px;
+	font-weight: 400;
+	font-size: 14px;
+}
+.btnModifier img{
+	margin-right: 5px;
+}
 .filtre{
 	text-align: center;
 	margin-bottom: 50px;

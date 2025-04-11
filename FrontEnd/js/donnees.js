@@ -11,3 +11,15 @@ export async function recuperationCategories() {
     const valeurCategories = JSON.stringify(categories)
     window.localStorage.setItem("categories", valeurCategories)
 }
+
+export async function connexion(pEmail, pMotDePasse) {
+    const utilisateur = {email:pEmail, password:pMotDePasse}
+    const chargeUtile = JSON.stringify(utilisateur)
+    const reponse = await fetch("http://localhost:5678/api/users/login",{
+        method: "POST",
+        headers:{"Content-Type": "application/json"},
+        body: chargeUtile
+    })
+
+    return(reponse)
+}

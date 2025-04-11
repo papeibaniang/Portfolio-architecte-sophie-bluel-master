@@ -46,6 +46,8 @@ function ajoutEvOnClick(travaux) {
 }
 
 export default function AffichageProjets(travaux, categories) {
-    afficherCategories(categories, travaux)
+    if(window.localStorage.getItem("token") == null){
+        afficherCategories(categories, travaux)
+    }
     afficherTravaux(travaux)
 }

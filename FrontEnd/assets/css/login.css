@@ -41,10 +41,10 @@ input[type="submit"]{
     border: none;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 input[type="email"], input[type="password"]{
-    color: #fff;
     box-shadow: 0 4px 14px 0 #00000017;
     border: none;
     height: 51px;
@@ -55,4 +55,10 @@ input[type="email"], input[type="password"]{
     font-weight: 500;
     font-size: 14px;
     color: #3D3D3D;
+}
+
+.messageErreur{
+    color: red;
+    font-weight: 500;
+    font-size: 14px;
 }
