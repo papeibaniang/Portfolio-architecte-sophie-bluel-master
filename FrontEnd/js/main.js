@@ -2,17 +2,11 @@ import{recuperationCategories, recuperationDesTravaux} from "./donnees.js"
 import AffichageProjets from "./travaux.js"
 import afficherModale from "./modale.js"
 
-let travaux = window.localStorage.getItem("travaux");
-let categories = window.localStorage.getItem("categories")
 const token = window.localStorage.getItem("token")
 
 //Récupération des travaux éventuellement stockées dans le localStorage
-if (travaux === null) {
+if (window.localStorage.getItem("travaux") === null) {
     await recuperationDesTravaux()
-    travaux = window.localStorage.getItem("travaux")
-    travaux = JSON.parse(travaux)
-} else {
-    travaux = JSON.parse(travaux)
 }
 
 //Vérifie si l'utilisateur est connecté
@@ -35,7 +29,8 @@ if(token != null){
 
     //Ajout d'un écouteur événement sur le bouton modifier
     span.addEventListener("click", function(){
-        afficherModale(travaux)
+        afficherModale(JSON.parse(window.localStorage.getItem("travaux")))
+        AffichageProjets(JSON.parse(window.localStorage.getItem("travaux")), JSON.parse(window.localStorage.getItem("categories")))
     })
 
     //Modification du bouton login en logout
@@ -51,13 +46,9 @@ if(token != null){
 }
 
 //Récupération des catégories de travaux éventuellement stockées dans le localStorage
-if (categories === null){
+if (window.localStorage.getItem("categories") === null){
     await recuperationCategories()
-    categories = window.localStorage.getItem("categories")
-    categories = JSON.parse(categories)
-}else{
-    categories = JSON.parse(categories)
 }
 
 //Affichage des projets
-AffichageProjets(travaux, categories)
+AffichageProjets(JSON.parse(window.localStorage.getItem("travaux")), JSON.parse(window.localStorage.getItem("categories")))

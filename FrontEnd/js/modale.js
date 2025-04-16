@@ -1,5 +1,6 @@
 import supprimerUnTravail from "./donnees.js"
 import{recuperationDesTravaux} from "./donnees.js"
+import AffichageProjets from "./travaux.js"
 
 export default function afficherModale(travaux) {
 
@@ -89,6 +90,7 @@ async function supprimerTravail(event){
     travaux = JSON.parse(travaux)
     supContenuModal()
     afficherTravauxModale(travaux)
+    AffichageProjets(travaux, JSON.parse(window.localStorage.getItem("categories")))
 }
 
 function ajoutBtnPrecedent(){
