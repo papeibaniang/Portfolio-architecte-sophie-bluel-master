@@ -1,5 +1,6 @@
 import{recuperationCategories, recuperationDesTravaux} from "./donnees.js"
 import AffichageProjets from "./travaux.js"
+import afficherModale from "./modale.js"
 
 let travaux = window.localStorage.getItem("travaux");
 let categories = window.localStorage.getItem("categories")
@@ -30,6 +31,12 @@ if(token != null){
     sectionPortfolio.insertBefore(div, sectionPortfolio.children[0])
     div.appendChild(titre)
     div.appendChild(span)
+    span.style.cursor = "pointer"
+
+    //Ajout d'un écouteur événement sur le bouton modifier
+    span.addEventListener("click", function(){
+        afficherModale(travaux)
+    })
 
     //Modification du bouton login en logout
     const login = document.getElementById("loginLogout")

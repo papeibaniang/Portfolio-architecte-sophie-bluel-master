@@ -23,3 +23,10 @@ export async function connexion(pEmail, pMotDePasse) {
 
     return(reponse)
 }
+
+export default async function supprimerUnTravail(id){
+    const reponse = await fetch("http://localhost:5678/api/works/"+id,{
+        method: "DELETE",
+        headers:{"Authorization": "Bearer " + window.localStorage.getItem("token")}
+    })
+}

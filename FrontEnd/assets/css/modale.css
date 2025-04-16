@@ -1,0 +1,84 @@
+.modale {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modale-contenu {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 32%;
+  }
+  
+  /* The Close Button */
+  .js-modal-close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #fff;
+  }
+  
+  .js-modal-close:hover,
+  .js-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#titreModal{
+    color: #000;
+    font-weight: 400;
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Work Sans';
+}
+.images{
+    margin: 20px 85px 38px 85px;
+    border-bottom: 1px solid #B3B3B3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 0;
+}
+.images div{
+    margin-right: 9px;
+    margin-bottom: 29px;
+    position: relative;
+}
+.images img{
+    max-width: 76.86px;
+    max-height: 102.57px;
+}
+.img-suppression{
+    border: 5px solid #000;
+    background-color: #000;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.btnEnvoi{
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+.btnEnvoi button{
+    border-radius: 60px;
+    background-color: #1D6154;
+    color: #fff;
+    border: none;
+    padding: 10px 49px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Syne";
+}
