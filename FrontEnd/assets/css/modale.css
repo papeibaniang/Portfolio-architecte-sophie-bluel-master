@@ -44,11 +44,13 @@
     margin-top: 30px;
     font-family: 'Work Sans';
 }
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
 .images{
     margin: 20px 85px 38px 85px;
     border-bottom: 1px solid #B3B3B3;
-    display: flex;
-    flex-wrap: wrap;
     padding: 26px 0;
 }
 .images div{
@@ -81,4 +83,42 @@
     font-weight: 700;
     font-size: 14px;
     font-family: "Syne";
+    width: 237px;
+}
+form label{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3D3D3D;
+}
+form input[type="text"], form select{
+  width: 100%;
+  box-shadow: 0 4px 14px 0 #00000017;
+  border: none;
+  color: #000;
+  height: 51px;
+  background-color: #fff;
+}
+form button{
+  display: block;
+  text-align: center;
+  padding: 10px 36px;
+  border-radius: 50px;
+  color: #306685;
+  background-color: #CBD6DC;
+  border: none;
+  margin: 0 130px 5px 130px;
+  font-weight: 500;
+  font-size: 14px;
+}
+form p{
+  font-size: 10px;
+  font-weight: 400;
+  color: #444;
+  display: block;
+  text-align: center;
+}
+form img{
+  padding: 20px 180px 10px 180px;
 }
