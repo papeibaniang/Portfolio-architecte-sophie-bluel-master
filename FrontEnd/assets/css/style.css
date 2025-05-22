@@ -51,15 +51,30 @@ html {
 	background-color: #FFFEF8;
 }
 body {
-	max-width: 1140px;
-	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+}
+.container{
+	max-width: 1140px;
+	margin:auto;
 }
 header {
 	display: flex;
 	justify-content: space-between;
-	margin: 50px 0
+	margin-top: 38px !important
+}
+.modeEdition{
+	display: none;
+	background-color:#000;
+	text-align: center;
+	color: #fff;
+	padding: 21px;
+	margin-bottom: 38px;
+}
+.modeEdition p{
+	display: inline;
+	font-weight: 400;
+	font-size: 16px;
 }
 section {
 	margin: 50px 0

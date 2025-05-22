@@ -1,7 +1,6 @@
 import supprimerUnTravail from "./donnees.js"
 import { recuperationDesTravaux } from "./donnees.js"
 import AffichageProjets from "./travaux.js"
-import AffichageProjets from "./travaux.js"
 
 export default function afficherModale(travaux) {
 

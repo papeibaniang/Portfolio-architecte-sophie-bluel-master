@@ -12,6 +12,9 @@ if (window.localStorage.getItem("travaux") === null) {
 //Vérifie si l'utilisateur est connecté
 if(token != null){
 
+    //Ajout de la division mode édition 
+    const modeEdition = document.getElementsByClassName("modeEdition")[0]
+    modeEdition.style.display = "block"
     //Ajout du bouton modifier
     const sectionPortfolio = document.getElementById("portfolio")
     const titre = sectionPortfolio.firstElementChild
